@@ -38,10 +38,11 @@ production stylesheet in assets/built/screen.css
     --color-darkgrey: #15171A;
     --color-midgrey: #738a94;
     --color-lightgrey: #f1f1f1;
-    --color-secondary-text: #979797;
+    --color-secondary-text: #e0e0e0;
     --color-border: #e1e1e1;
     --color-wash: #e5eff5;
     --color-darkmode: #151719;
+    --color-gunmetal: #303050;
 
     /*
     An accent color is also set by Ghost itself in
@@ -121,7 +122,9 @@ production stylesheet in assets/built/screen.css
 
 .has-cover .site-header-content {
     min-height: 560px;
-    background-color: var(--ghost-accent-color);
+    /* background-color: var(--ghost-accent-color); */
+    background: var(--color-darkgrey);
+    background: linear-gradient(0deg, var(--color-darkgrey) 0%, var(--color-gunmetal) 50%);
     color: #fff;
 }
 
